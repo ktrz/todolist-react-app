@@ -1,8 +1,10 @@
-import React from 'react'
-import { Button } from 'react-bootstrap';
+import './ButtonExample.css'
 
-export const ButtonExamples = () => (
-  <div>
+import React from 'react'
+import { Button } from 'react-bootstrap'
+
+export const ButtonExample = () => (
+  <div className="button-example">
     <p>
       <Button onClick={() => alert('I am default button')} tabIndex="1">
         Default button
@@ -55,7 +57,6 @@ export const ButtonExamples = () => (
       </Button>
     </p>
     <p>
-
       <Button bsStyle="primary" bsSize="large" disabled>
         Disabled primary button
       </Button>

@@ -1,0 +1,11 @@
+.button-toolbar-example {
+  padding-top: 15px;
+}
+
+.button-toolbar-example > div {
+  margin-bottom: 15px;
+}
+
+.button-toolbar-example > div:last-child {
+  margin-bottom: 0;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Jumbotron } from 'react-bootstrap'
+import { TabbedExamples } from './TabbedExamples'
 
 export const App = () => (
   <Jumbotron>
@@ -10,8 +11,9 @@ export const App = () => (
         Let's get started
       </Button>
     </p>
-    <p>Let's put our examples in separate tabs so that we can view them on one screen without scrolling. We can use tabs component for
-      that</p>
-
+    <p>
+      Let's put our examples in separate tabs so that we can view them on one screen without scrolling. We can use tabs component for that
+    </p>
+    <TabbedExamples/>
   </Jumbotron>
 )
