@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const TodoItem = () => (
+export const TodoItem = (props) => (
   <span className="list-group-item">
-    <h4>Item title</h4>
-    <p>Item description</p>
+    <h4>{props.itemName}</h4>
+    <p>{props.itemDescription}</p>
   </span>
 )

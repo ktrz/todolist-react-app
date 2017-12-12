@@ -6,16 +6,12 @@ import { TodoItem } from './TodoItem'
 export const TodoList = () => (
   <div className="todo-list">
     <ListGroup>
-      <ListGroupItem header={'install NodeJS'} active>Task description</ListGroupItem>
-      <ListGroupItem header={'install create-react-app'} bsStyle="danger">Task description (important task)</ListGroupItem>
-      <ListGroupItem header={'create new app'}>Task description</ListGroupItem>
-      <ListGroupItem header={'npm install'}>Task description</ListGroupItem>
-      <ListGroupItem header={'npm start'}>Task description</ListGroupItem>
-      <ListGroupItem header={'enjoy the running app'}>Task description</ListGroupItem>
-      <TodoItem/>
-      <TodoItem/>
-      <TodoItem/>
-      <TodoItem/>
+      <TodoItem itemName={'install NodeJS'} itemDescription={'Task description'}></TodoItem>
+      <TodoItem itemName={'install create-react-app'} itemDescription={'Task description'}></TodoItem>
+      <TodoItem itemName={'create new app'} itemDescription={'Task description'}></TodoItem>
+      <TodoItem itemName={'npm install'} itemDescription={'Task description'}></TodoItem>
+      <TodoItem itemName={'npm start'} itemDescription={'Task description'}></TodoItem>
+      <TodoItem itemName={'enjoy the running app'} itemDescription={'Task description'}></TodoItem>
     </ListGroup>
   </div>
 )
