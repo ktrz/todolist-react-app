@@ -1,8 +1,5 @@
 import React from 'react'
 import { Button, Jumbotron } from 'react-bootstrap'
-import { ButtonExamples } from './ButtonExamples'
-import { ButtonGroupExample } from './ButtonGroupExample'
-import { ButtonToolbarExample } from './ButtonToolbarExample'
 
 export const App = () => (
   <Jumbotron>
@@ -13,9 +10,8 @@ export const App = () => (
         Let's get started
       </Button>
     </p>
-    <ButtonExamples/>
-    <ButtonGroupExample/>
-    <ButtonToolbarExample/>
-    <p>Now we have nicely split up components :)</p>
+    <p>Let's put our examples in separate tabs so that we can view them on one screen without scrolling. We can use tabs component for
+      that</p>
+
   </Jumbotron>
 )
