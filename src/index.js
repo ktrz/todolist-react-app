@@ -2,66 +2,56 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import React from 'react';
-import { Button, ButtonToolbar, Jumbotron } from 'react-bootstrap'
+import { Button, ButtonGroup, ButtonToolbar, Jumbotron } from 'react-bootstrap'
 import ReactDOM from 'react-dom';
 
 const ButtonExamples = () => (
   <div>
     <p>
-      <ButtonToolbar>
-        <Button onClick={() => alert('I am default button')} tabIndex="1">
-          Default button
-        </Button>
-        <Button bsStyle="primary" onClick={() => alert('I am primary button')} tabIndex="2">
-          Primary button
-        </Button>
-        <Button bsStyle="success" onClick={() => alert('Congratulation, you have created a success button')} tabIndex="3">
-          Success button
-        </Button>
-        <Button bsStyle="danger" onClick={() => alert('You are a brave one :)')} tabIndex="4">
-          Danger button
-        </Button>
-      </ButtonToolbar>
+      <Button onClick={() => alert('I am default button')} tabIndex="1">
+        Default button
+      </Button>
+      <Button bsStyle="primary" onClick={() => alert('I am primary button')} tabIndex="2">
+        Primary button
+      </Button>
+      <Button bsStyle="success" onClick={() => alert('Congratulation, you have created a success button')} tabIndex="3">
+        Success button
+      </Button>
+      <Button bsStyle="danger" onClick={() => alert('You are a brave one :)')} tabIndex="4">
+        Danger button
+      </Button>
     </p>
     <p>
-      <ButtonToolbar>
-        <Button bsSize="large">
-          Large button
-        </Button>
-        <Button bsStyle="primary" bsSize="large">
-          Large button
-        </Button>
-      </ButtonToolbar>
+      <Button bsSize="large">
+        Large button
+      </Button>
+      <Button bsStyle="primary" bsSize="large">
+        Large button
+      </Button>
     </p>
     <p>
-      <ButtonToolbar>
-        <Button>
-          Default size button
-        </Button>
-        <Button bsStyle="primary">
-          Default size button
-        </Button>
-      </ButtonToolbar>
+      <Button>
+        Default size button
+      </Button>
+      <Button bsStyle="primary">
+        Default size button
+      </Button>
     </p>
     <p>
-      <ButtonToolbar>
-        <Button bsSize="small">
-          Small button
-        </Button>
-        <Button bsStyle="primary" bsSize="small">
-          Small button
-        </Button>
-      </ButtonToolbar>
+      <Button bsSize="small">
+        Small button
+      </Button>
+      <Button bsStyle="primary" bsSize="small">
+        Small button
+      </Button>
     </p>
     <p>
-      <ButtonToolbar>
-        <Button bsSize="xsmall">
-          Small button
-        </Button>
-        <Button bsStyle="primary" bsSize="xsmall">
-          Small button
-        </Button>
-      </ButtonToolbar>
+      <Button bsSize="xsmall">
+        Small button
+      </Button>
+      <Button bsStyle="primary" bsSize="xsmall">
+        Small button
+      </Button>
     </p>
     <p>
       <Button bsStyle="primary" bsSize="large" block>
@@ -69,18 +59,55 @@ const ButtonExamples = () => (
       </Button>
     </p>
     <p>
-      <ButtonToolbar>
-        <Button bsStyle="primary" bsSize="large" disabled>
-          Disabled primary button
-        </Button>
-        <Button bsSize="large" disabled>
-          Disabled button
-        </Button>
-      </ButtonToolbar>
+
+      <Button bsStyle="primary" bsSize="large" disabled>
+        Disabled primary button
+      </Button>
+      <Button bsSize="large" disabled>
+        Disabled button
+      </Button>
     </p>
     <p>
       All react-bootstrap button properties can be found
       <a href="https://react-bootstrap.github.io/components.html#buttons-props" target="_blank">here</a>
+    </p>
+  </div>
+)
+
+const ButtonGroupExample = () => (
+  <div>
+    <p>
+      <ButtonGroup>
+        <Button>First</Button>
+        <Button>Second</Button>
+        <Button>Third</Button>
+      </ButtonGroup>
+    </p>
+    <p>
+      <ButtonGroup>
+        <Button>Default</Button>
+        <Button bsStyle="info">Info</Button>
+        <Button bsStyle="warning">Warning</Button>
+      </ButtonGroup>
+    </p>
+  </div>
+)
+
+const ButtonToolbarExample = () => (
+  <div>
+    <p>
+      <ButtonToolbar>
+        <Button>First</Button>
+        <Button>Second</Button>
+        <Button>Third</Button>
+      </ButtonToolbar>
+    </p>
+    <p>
+      <ButtonToolbar>
+        <Button>Default</Button>
+        <Button bsStyle="primary">Primary</Button>
+        <Button bsStyle="danger">Danger</Button>
+      </ButtonToolbar>
     </p>
   </div>
 )
@@ -94,7 +121,8 @@ const App = () => (
         Let's get started
       </Button>
     </p>
-    <ButtonExamples/>
+    <ButtonGroupExample/>
+    <ButtonToolbarExample/>
   </Jumbotron>
 )
 
