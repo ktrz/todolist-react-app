@@ -1,10 +1,12 @@
 import React from 'react'
-import { ListGroup, ListGroupItem } from 'react-bootstrap'
-import './TodoList.css'
+import { ListGroup } from 'react-bootstrap'
+import { TodoInput } from './TodoInput'
 import { TodoItem } from './TodoItem'
+import './TodoList.css'
 
 export const TodoList = () => (
   <div className="todo-list">
+    <TodoInput value={'Test value'} onChange={(e) => console.log(e.target.value)}/>
     <ListGroup>
       <TodoItem itemName={'install NodeJS'} itemDescription={'Task description'}></TodoItem>
       <TodoItem itemName={'install create-react-app'} itemDescription={'Task description'}></TodoItem>
