@@ -1,6 +1,7 @@
 import React from 'react'
 import { ListGroup, ListGroupItem } from 'react-bootstrap'
 import './TodoList.css'
+import { TodoItem } from './TodoItem'
 
 export const TodoList = () => (
   <div className="todo-list">
@@ -11,6 +12,10 @@ export const TodoList = () => (
       <ListGroupItem header={'npm install'}>Task description</ListGroupItem>
       <ListGroupItem header={'npm start'}>Task description</ListGroupItem>
       <ListGroupItem header={'enjoy the running app'}>Task description</ListGroupItem>
+      <TodoItem/>
+      <TodoItem/>
+      <TodoItem/>
+      <TodoItem/>
     </ListGroup>
   </div>
 )
