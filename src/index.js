@@ -121,8 +121,7 @@ const App = () => (
         Let's get started
       </Button>
     </p>
-    <ButtonGroupExample/>
-    <ButtonToolbarExample/>
+    <p>Ok our index.js file is growing really fast. It's time to split it up!</p>
   </Jumbotron>
 )
 
