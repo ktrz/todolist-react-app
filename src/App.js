@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button, Jumbotron } from 'react-bootstrap'
-import { TabbedExamples } from './TabbedExamples'
+import { Button, Jumbotron, Tab, Tabs } from 'react-bootstrap'
+import { TabbedExamples } from './examples/TabbedExamples'
 
 export const App = () => (
   <Jumbotron>
@@ -11,9 +11,13 @@ export const App = () => (
         Let's get started
       </Button>
     </p>
-    <p>
-      Let's put our examples in separate tabs so that we can view them on one screen without scrolling. We can use tabs component for that
-    </p>
-    <TabbedExamples/>
+    <Tabs defaultActiveKey={1} id="main-tabs">
+      <Tab eventKey={1} title="Todo list app">
+        It's time to create our todo list app
+      </Tab>
+      <Tab eventKey={2} title="Examples">
+        <TabbedExamples/>
+      </Tab>
+    </Tabs>
   </Jumbotron>
 )
