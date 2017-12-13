@@ -17,11 +17,17 @@ export class TodoList extends React.Component {
   render() {
     return (
       <div className="todo-list">
-        <TodoInput value={this.state.newItemValue} onChange={(e) => this.handleNewItemValue(e.target.value)} onSave={this.saveNewItem.bind(this)}/>
+        <TodoInput
+          value={this.state.newItemValue}
+          onChange={(e) => this.handleNewItemValue(e.target.value)}
+          onSave={this.saveNewItem.bind(this)}/>
         <ListGroup>
           {
             this.state.savedNewItem
-              ? <TodoItem itemName={this.state.savedNewItem.name} itemDescription={this.state.savedNewItem.description}/>
+              ? <TodoItem
+                  itemName={this.state.savedNewItem.name}
+                  itemDescription={this.state.savedNewItem.description}
+                  onSaveName={this.saveNewItemName.bind(this)}/>
               : null
           }
           <TodoItem itemName={'install NodeJS'} itemDescription={'Task description'}></TodoItem>
@@ -42,10 +48,15 @@ export class TodoList extends React.Component {
   }
 
   saveNewItem() {
+    this.saveNewItemName(this.state.newItemValue)
+    this.handleNewItemValue('')
+  }
+
+  saveNewItemName(v) {
     this.setState({
       savedNewItem: {
-        name: this.state.newItemValue,
-        description: `Description of ${this.state.newItemValue}`
+        name: v,
+        description: `Description of ${v}`
       }
     })
   }
