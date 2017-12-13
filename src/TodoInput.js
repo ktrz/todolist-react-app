@@ -11,7 +11,7 @@ export const TodoInput = (props) => (
           onChange={props.onChange}
           placeholder="Enter task name"></FormControl>
         <InputGroup.Button>
-          <Button bsStyle="primary">Save</Button>
+          <Button bsStyle="primary" onClick={props.onSave}>Save</Button>
         </InputGroup.Button>
       </InputGroup>
     </FormGroup>
